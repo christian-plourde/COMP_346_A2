@@ -1,5 +1,9 @@
 package common;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * Class Semaphore
  * Implements artificial semaphore built on top of Java's sync primitives.
@@ -80,6 +84,22 @@ public class Semaphore
 		}
 		catch(InterruptedException e)
 		{
+
+			try
+			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true));
+				writer.write("Semaphore::Wait() - caught InterruptedException: " +
+						e.getMessage());
+				writer.newLine();
+				writer.flush();
+				writer.close();
+			}
+
+			catch(IOException ex)
+			{
+				System.err.println("IOException occurred.");
+			}
+
 			System.out.println
 			(
 				"Semaphore::Wait() - caught InterruptedException: " +

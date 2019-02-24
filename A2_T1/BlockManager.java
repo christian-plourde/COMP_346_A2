@@ -1,5 +1,11 @@
 // Import (aka include) some stuff.
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import common.*;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.Buffer;
 
 /**
  * Class BlockManager
@@ -55,11 +61,21 @@ public class BlockManager
 	{
 		try
 		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+
 			// Some initial stats...
 			System.out.println("Main thread starts executing.");
+			writer.write("Main thread starts executing.");
+			writer.newLine();
 			System.out.println("Initial value of top = " + soStack.getITop() + ".");
+			writer.write("Initial value of top = " + soStack.getITop() + ".");
+			writer.newLine();
 			System.out.println("Initial value of stack top = " + soStack.pick() + ".");
+			writer.write("Initial value of stack top = " + soStack.pick() + ".");
+			writer.newLine();
 			System.out.println("Main thread will now fork several threads.");
+			writer.write("Main thread will now fork several threads.");
+			writer.newLine();
 
 			/*
 			 * The birth of threads
@@ -69,12 +85,16 @@ public class BlockManager
 			AcquireBlock ab3 = new AcquireBlock();
 
 			System.out.println("main(): Three AcquireBlock threads have been created.");
+			writer.write("main(): Three AcquireBlock threads have been created.");
+			writer.newLine();
 
 			ReleaseBlock rb1 = new ReleaseBlock();
 			ReleaseBlock rb2 = new ReleaseBlock();
 			ReleaseBlock rb3 = new ReleaseBlock();
 
 			System.out.println("main(): Three ReleaseBlock threads have been created.");
+			writer.write("main(): Three ReleaseBlock threads have been created.");
+			writer.newLine();
 
 			// Create an array object first
 			CharStackProber	aStackProbers[] = new CharStackProber[NUM_PROBERS];
@@ -84,6 +104,8 @@ public class BlockManager
 				aStackProbers[i] = new CharStackProber();
 
 			System.out.println("main(): CharStackProber threads have been created: " + NUM_PROBERS);
+			writer.write("main(): CharStackProber threads have been created: " + NUM_PROBERS);
+			writer.newLine();
 
 			/*
 			 * Twist 'em all
@@ -100,6 +122,8 @@ public class BlockManager
 			rb3.start();
 
 			System.out.println("main(): All the threads are ready.");
+			writer.write("main(): All the threads are ready.");
+			writer.newLine();
 
 			/*
 			 * Wait by here for all forked threads to die
@@ -122,7 +146,24 @@ public class BlockManager
 			System.out.println("Final value of stack top-1 = " + soStack.getAt(soStack.getITop() - 1) + ".");
 			System.out.println("Stack access count = " + soStack.getAccessCounter());
 
+			writer.write("System terminates normally.");
+			writer.newLine();
+			writer.write("Final value of top = " + soStack.getITop() + ".");
+			writer.newLine();
+			writer.write("Final value of stack top = " + soStack.pick() + ".");
+			writer.newLine();
+			writer.write("Final value of stack top-1 = " + soStack.getAt(soStack.getITop() - 1) + ".");
+			writer.newLine();
+			writer.write("Stack access count = " + soStack.getAccessCounter());
+			writer.newLine();
+			writer.flush();
+			writer.close();
+
 			System.exit(0);
+		}
+		catch(IOException ioe)
+		{
+			System.err.println("IOException occurred.");
 		}
 		catch(InterruptedException e)
 		{
@@ -153,6 +194,19 @@ public class BlockManager
 
 		public void run()
 		{
+			try
+			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+				writer.write("AcquireBlock thread [TID=" + this.iTID + "] starts executing.");
+				writer.newLine();
+				writer.flush();
+				writer.close();
+			}
+
+			catch(IOException e)
+			{
+				System.err.println("IOException occurred.");
+			}
 			System.out.println("AcquireBlock thread [TID=" + this.iTID + "] starts executing.");
 
 
@@ -161,10 +215,16 @@ public class BlockManager
 
 			try
 			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true));
+				writer.write("AcquireBlock thread [TID=" + this.iTID + "] requests Ms block.");
+				writer.newLine();
 				System.out.println("AcquireBlock thread [TID=" + this.iTID + "] requests Ms block.");
 
 				this.cCopy = soStack.pop();
 
+				writer.write("AcquireBlock thread [TID=" + this.iTID + "] has obtained Ms block " + this.cCopy +
+						" from position " + (soStack.getITop() + 1) + ".");
+				writer.newLine();
 				System.out.println
 				(
 					"AcquireBlock thread [TID=" + this.iTID + "] has obtained Ms block " + this.cCopy +
@@ -172,17 +232,29 @@ public class BlockManager
 				);
 
 
+				writer.write("Acq[TID=" + this.iTID + "]: Current value of top = " +
+						soStack.getITop() + ".");
+				writer.newLine();
 				System.out.println
 				(
 					"Acq[TID=" + this.iTID + "]: Current value of top = " +
 					soStack.getITop() + "."
 				);
 
+				writer.write("Acq[TID=" + this.iTID + "]: Current value of stack top = " +
+						soStack.pick() + ".");
+				writer.newLine();
+				writer.flush();
+				writer.close();
 				System.out.println
 				(
 					"Acq[TID=" + this.iTID + "]: Current value of stack top = " +
 					soStack.pick() + "."
 				);
+			}
+			catch(IOException ex)
+			{
+				System.err.println("IOException occurred.");
 			}
 			catch(Exception e)
 			{
@@ -192,7 +264,19 @@ public class BlockManager
 
 			phase2();
 
+			try
+			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+				writer.write("AcquireBlock thread [TID=" + this.iTID + "] terminates.");
+				writer.newLine();
+				writer.flush();
+				writer.close();
+			}
 
+			catch(IOException e)
+			{
+				System.err.println("IOException occurred.");
+			}
 			System.out.println("AcquireBlock thread [TID=" + this.iTID + "] terminates.");
 		}
 	} // class AcquireBlock
@@ -210,6 +294,20 @@ public class BlockManager
 
 		public void run()
 		{
+			try
+			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+				writer.write("ReleaseBlock thread [TID=" + this.iTID + "] starts executing.");
+				writer.newLine();
+				writer.flush();
+				writer.close();
+
+			}
+
+			catch(IOException e)
+			{
+				System.err.println("IOException occurred.");
+			}
 			System.out.println("ReleaseBlock thread [TID=" + this.iTID + "] starts executing.");
 
 
@@ -218,6 +316,10 @@ public class BlockManager
 
 			try
 			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+				writer.write("ReleaseBlock thread [TID=" + this.iTID + "] returns Ms block " + this.cBlock +
+						" to position " + (soStack.getITop() + 1) + ".");
+				writer.newLine();
 				if(soStack.isEmpty() == false)
 					this.cBlock = (char)(soStack.pick() + 1);
 
@@ -230,6 +332,14 @@ public class BlockManager
 
 				soStack.push(this.cBlock);
 
+				writer.write("Rel[TID=" + this.iTID + "]: Current value of top = " +
+						soStack.getITop() + ".");
+				writer.newLine();
+				writer.write("Rel[TID=" + this.iTID + "]: Current value of stack top = " +
+					soStack.pick() + ".");
+				writer.newLine();
+				writer.flush();
+				writer.close();
 				System.out.println
 				(
 					"Rel[TID=" + this.iTID + "]: Current value of top = " +
@@ -242,6 +352,10 @@ public class BlockManager
 					soStack.pick() + "."
 				);
 			}
+			catch(IOException ex)
+			{
+				System.err.println("IOException occurred.");
+			}
 			catch(Exception e)
 			{
 				reportException(e);
@@ -251,7 +365,18 @@ public class BlockManager
 
 			phase2();
 
+			try
+			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+				writer.write("ReleaseBlock thread [TID=" + this.iTID + "] terminates.");
+				writer.flush();
+				writer.close();
+			}
 
+			catch(IOException e)
+			{
+				System.err.println("IOException occurred.");
+			}
 			System.out.println("ReleaseBlock thread [TID=" + this.iTID + "] terminates.");
 		}
 	} // class ReleaseBlock
@@ -269,23 +394,38 @@ public class BlockManager
 
 			try
 			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
 				for(int i = 0; i < siThreadSteps; i++)
 				{
+					writer.write("Stack Prober [TID=" + this.iTID + "]: Stack state: ");
+					writer.newLine();
 					System.out.print("Stack Prober [TID=" + this.iTID + "]: Stack state: ");
 
 					// [s] - means ordinay slot of a stack
 					// (s) - current top of the stack
 					for(int s = 0; s < soStack.getISize(); s++)
+					{
+						writer.write((s == BlockManager.soStack.getITop() ? "(" : "[") +
+								BlockManager.soStack.getAt(s) +
+								(s == BlockManager.soStack.getITop() ? ")" : "]"));
+						writer.newLine();
 						System.out.print
-						(
-							(s == BlockManager.soStack.getITop() ? "(" : "[") +
-							BlockManager.soStack.getAt(s) +
-							(s == BlockManager.soStack.getITop() ? ")" : "]")
-						);
+								(
+										(s == BlockManager.soStack.getITop() ? "(" : "[") +
+												BlockManager.soStack.getAt(s) +
+												(s == BlockManager.soStack.getITop() ? ")" : "]")
+								);
+					}
 
+					writer.write(".");
+					writer.newLine();
 					System.out.println(".");
 
 				}
+			}
+			catch(IOException ex)
+			{
+				System.err.println("IOException occurred.");
 			}
 			catch(Exception e)
 			{

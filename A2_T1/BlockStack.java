@@ -1,3 +1,5 @@
+import java.io.*;
+
 /**
  * Class BlockStack
  * Implements character block stack and operations upon it.
@@ -54,8 +56,7 @@ class BlockStack
 	public BlockStack(final int piSize)
 	{
 
-
-                if(piSize != DEFAULT_SIZE)
+		if(piSize != DEFAULT_SIZE)
 		{
 			this.acStack = new char[piSize];
 
@@ -98,7 +99,21 @@ class BlockStack
 	{
 		accessCounter++;
 		this.acStack[++this.iTop] = pcBlock;
+		try
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+			writer.write("Value was successfully pushed onto the stack.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
+
+		catch(IOException e)
+		{
+			System.err.println("IOException occurred.");
+		}
 		System.out.println("Value was successfully pushed onto the stack.");
+
 	}
 
 	/**
@@ -110,6 +125,21 @@ class BlockStack
 		accessCounter++;
 		char cBlock = this.acStack[this.iTop];
 		this.acStack[this.iTop--] = '*'; // Leave prev. value undefined
+
+		try
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true));
+			writer.write("Value was successfully popped off the stack.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
+
+		catch(IOException e)
+		{
+			System.err.println("IOException occurred.");
+		}
+
 		System.out.println("Value was successfully popped off the stack.");
 		return cBlock;
 	}

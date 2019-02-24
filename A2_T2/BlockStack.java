@@ -1,3 +1,4 @@
+import java.io.*;
 
 /**
  * Class BlockStack
@@ -30,17 +31,17 @@ class BlockStack
 	/**
 	 * Current size of the stack
 	 */
-	private int iSize = DEFAULT_SIZE;
+	public int iSize = DEFAULT_SIZE;
 
 	/**
 	 * Current top of the stack
 	 */
-	private int iTop  = 3;
+	public int iTop  = 3;
 
 	/**
 	 * stack[0:5] with four defined values
 	 */
-	private char acStack[] = new char[] {'a', 'b', 'c', 'd', '$', '$'};
+	public char acStack[] = new char[] {'a', 'b', 'c', 'd', '$', '$'};
 
 	/**
 	 * Default constructor
@@ -54,6 +55,7 @@ class BlockStack
 	 */
 	public BlockStack(final int piSize)
 	{
+
 		if(piSize != DEFAULT_SIZE)
 		{
 			this.acStack = new char[piSize];
@@ -95,11 +97,23 @@ class BlockStack
 	 */
 	public void push(final char pcBlock)
 	{
-		if(this.iTop == 0)
-			this.acStack[this.iTop++] = 'a';
 		accessCounter++;
 		this.acStack[++this.iTop] = pcBlock;
+		try
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+			writer.write("Value was successfully pushed onto the stack.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
+
+		catch(IOException e)
+		{
+			System.err.println("IOException occurred.");
+		}
 		System.out.println("Value was successfully pushed onto the stack.");
+
 	}
 
 	/**
@@ -111,6 +125,21 @@ class BlockStack
 		accessCounter++;
 		char cBlock = this.acStack[this.iTop];
 		this.acStack[this.iTop--] = '*'; // Leave prev. value undefined
+
+		try
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt", true));
+			writer.write("Value was successfully popped off the stack.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
+
+		catch(IOException e)
+		{
+			System.err.println("IOException occurred.");
+		}
+
 		System.out.println("Value was successfully popped off the stack.");
 		return cBlock;
 	}
@@ -149,15 +178,6 @@ class BlockStack
 	public boolean isEmpty()
 	{
 		return(this.iTop == -1);
-	}
-
-	/**
-	 * A method to retrieve the actual stack array
-	 * @return The array that is holding the stack
-	 */
-	public char[] getAcStack()
-	{
-		return acStack;
 	}
 }
 

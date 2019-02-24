@@ -1,4 +1,5 @@
 package common;
+import java.io.*;
 
 import java.util.Random;
 
@@ -105,6 +106,27 @@ public class BaseThread extends Thread
 	 */
 	protected synchronized void phase1()
 	{
+		try
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+			writer.write(this.getClass().getName() + " thread [TID=" + this.iTID + "] starts PHASE I.");
+			writer.newLine();
+			writer.write("Some stats info in the PHASE I:\n" +
+					"    iTID = " + this.iTID +
+					", siNextTID = " + siNextTID +
+					", siTurn = " + siTurn +
+					".\n    Their \"checksum\": " + (siNextTID * 100 + this.iTID * 10 + siTurn));
+			writer.newLine();
+			writer.write(this.getClass().getName() + " thread [TID=" + this.iTID + "] finishes PHASE I.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
+
+		catch(IOException e)
+		{
+			System.err.println("IOException occurred.");
+		}
 		System.out.println(this.getClass().getName() + " thread [TID=" + this.iTID + "] starts PHASE I.");
 
 		System.out.println
@@ -125,6 +147,28 @@ public class BaseThread extends Thread
 	 */
 	protected synchronized void phase2()
 	{
+		try
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+			writer.write(this.getClass().getName() + " thread [TID=" + this.iTID + "] starts PHASE II.");
+			writer.newLine();
+			writer.write("Some stats info in the PHASE II:\n" +
+					"    iTID = " + this.iTID +
+					", siNextTID = " + siNextTID +
+					", siTurn = " + siTurn +
+					".\n    Their \"checksum\": " + (siNextTID * 100 + this.iTID * 10 + siTurn));
+			writer.newLine();
+			writer.write(this.getClass().getName() + " thread [TID=" + this.iTID + "] finishes PHASE II.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+		}
+
+		catch(IOException e)
+		{
+			System.err.println("IOException occurred.");
+		}
+
 		System.out.println(this.getClass().getName() + " thread [TID=" + this.iTID + "] starts PHASE II.");
 
 		System.out.println
