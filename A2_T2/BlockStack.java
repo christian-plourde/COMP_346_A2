@@ -1,3 +1,4 @@
+
 /**
  * Class BlockStack
  * Implements character block stack and operations upon it.
@@ -29,17 +30,17 @@ class BlockStack
 	/**
 	 * Current size of the stack
 	 */
-	public int iSize = DEFAULT_SIZE;
+	private int iSize = DEFAULT_SIZE;
 
 	/**
 	 * Current top of the stack
 	 */
-	public int iTop  = 3;
+	private int iTop  = 3;
 
 	/**
 	 * stack[0:5] with four defined values
 	 */
-	public char acStack[] = new char[] {'a', 'b', 'c', 'd', '$', '$'};
+	private char acStack[] = new char[] {'a', 'b', 'c', 'd', '$', '$'};
 
 	/**
 	 * Default constructor
@@ -53,9 +54,7 @@ class BlockStack
 	 */
 	public BlockStack(final int piSize)
 	{
-
-
-                if(piSize != DEFAULT_SIZE)
+		if(piSize != DEFAULT_SIZE)
 		{
 			this.acStack = new char[piSize];
 
@@ -96,6 +95,8 @@ class BlockStack
 	 */
 	public void push(final char pcBlock)
 	{
+		if(this.iTop == 0)
+			this.acStack[this.iTop++] = 'a';
 		accessCounter++;
 		this.acStack[++this.iTop] = pcBlock;
 		System.out.println("Value was successfully pushed onto the stack.");
@@ -148,6 +149,15 @@ class BlockStack
 	public boolean isEmpty()
 	{
 		return(this.iTop == -1);
+	}
+
+	/**
+	 * A method to retrieve the actual stack array
+	 * @return The array that is holding the stack
+	 */
+	public char[] getAcStack()
+	{
+		return acStack;
 	}
 }
 
