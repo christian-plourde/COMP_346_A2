@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee3ba46e-8f21-4fd4-92f0-61d144ee6344" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../A2_T1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/BlockManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$AcquireBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$CharStackProber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$ReleaseBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/BlockManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$AcquireBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$CharStackProber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$ReleaseBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T2/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlockManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlockStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/BlockManager$AcquireBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/BlockManager$CharStackProber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/BlockManager$ReleaseBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/BlockManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/BlockStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/BlockStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2_T3/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T3/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BlockManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35" selection-start-column="35" selection-end-column="35" />
+            <state relative-caret-position="-23">
+              <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3243" />
+            <state relative-caret-position="-460" />
           </provider>
         </entry>
       </file>
@@ -114,11 +88,6 @@
             <path>
               <item name="A2_T3" type="b2602c69:ProjectViewProjectNode" />
               <item name="A2_T3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A2_T3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A2_T3" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -170,7 +139,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16761133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -181,7 +149,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -231,13 +199,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3243" />
+        <state relative-caret-position="-460" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlockManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="-23">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
