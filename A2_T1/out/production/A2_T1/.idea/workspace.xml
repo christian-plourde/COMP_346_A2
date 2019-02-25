@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="671aee0f-61c6-442b-af6d-6020bccacaf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlockStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/BaseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/BaseThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/A2_T2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/BlockManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/BlockStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/common/BaseThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/common/Semaphore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/A2_T2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$AcquireBlock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$CharStackProber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager$ReleaseBlock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/BlockStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/common/BaseThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A2_T2/out/production/A2_T2/common/Semaphore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/BlockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/BlockStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/BlockStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$AcquireBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$CharStackProber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$ReleaseBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/output.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,15 +22,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/BaseThread.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+            <state relative-caret-position="269">
+              <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BlockManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="186" column="27" lean-forward="true" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4474#4475#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,15 +46,22 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>catch(IO</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BlockStack.java" />
         <option value="$PROJECT_DIR$/output.txt" />
         <option value="$PROJECT_DIR$/common/BaseThread.java" />
+        <option value="$PROJECT_DIR$/common/Semaphore.java" />
+        <option value="$PROJECT_DIR$/BlockStack.java" />
+        <option value="$PROJECT_DIR$/BlockManager.java" />
       </list>
     </option>
   </component>
@@ -78,7 +77,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,20 +84,16 @@
               <item name="A2_T1" type="b2602c69:ProjectViewProjectNode" />
               <item name="A2_T1" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="A2_T1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A2_T1" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551033692960" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551047973482" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -150,7 +144,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15222672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -179,29 +173,62 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/common/BaseThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="166" column="16" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5104#5105#0" expanded="true" />
+            <element signature="e#5138#5139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-928">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+            <element signature="e#2626#2627#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BlockStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="143" column="22" lean-forward="true" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
+        <state relative-caret-position="89">
+          <caret line="137" column="16" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="16" />
           <folding>
+            <element signature="e#2913#2914#0" expanded="true" />
             <element signature="e#2931#2932#0" expanded="true" />
+            <element signature="e#3043#3044#0" expanded="true" />
             <element signature="e#3062#3063#0" expanded="true" />
+            <element signature="e#3228#3229#0" expanded="true" />
             <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="e#3399#3400#0" expanded="true" />
             <element signature="e#3429#3430#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/BaseThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="148" column="5" lean-forward="true" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+        <state relative-caret-position="269">
+          <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="186" column="27" lean-forward="true" selection-start-line="186" selection-start-column="27" selection-end-line="186" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4474#4475#0" expanded="true" />
           </folding>
         </state>
       </provider>

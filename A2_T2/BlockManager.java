@@ -92,6 +92,8 @@ public class BlockManager
 			writer.write("Main thread will now fork several threads.");
 			writer.newLine();
 
+			writer.flush();
+			writer.close();
 			/*
 			 * The birth of threads
 			 */
@@ -100,16 +102,22 @@ public class BlockManager
 			AcquireBlock ab3 = new AcquireBlock();
 
 			System.out.println("main(): Three AcquireBlock threads have been created.");
+			writer = new BufferedWriter(new FileWriter("output.txt",true));
 			writer.write("main(): Three AcquireBlock threads have been created.");
 			writer.newLine();
+			writer.flush();
+			writer.close();
 
 			ReleaseBlock rb1 = new ReleaseBlock();
 			ReleaseBlock rb2 = new ReleaseBlock();
 			ReleaseBlock rb3 = new ReleaseBlock();
 
 			System.out.println("main(): Three ReleaseBlock threads have been created.");
+			writer = new BufferedWriter(new FileWriter("output.txt",true));
 			writer.write("main(): Three ReleaseBlock threads have been created.");
 			writer.newLine();
+			writer.flush();
+			writer.close();
 
 			// Create an array object first
 			CharStackProber	aStackProbers[] = new CharStackProber[NUM_PROBERS];
@@ -119,8 +127,11 @@ public class BlockManager
 				aStackProbers[i] = new CharStackProber();
 
 			System.out.println("main(): CharStackProber threads have been created: " + NUM_PROBERS);
+			writer = new BufferedWriter(new FileWriter("output.txt",true));
 			writer.write("main(): CharStackProber threads have been created: " + NUM_PROBERS);
 			writer.newLine();
+			writer.flush();
+			writer.close();
 
 			/*
 			 * Twist 'em all
@@ -137,8 +148,11 @@ public class BlockManager
 			rb3.start();
 
 			System.out.println("main(): All the threads are ready.");
+			writer = new BufferedWriter(new FileWriter("output.txt",true));
 			writer.write("main(): All the threads are ready.");
 			writer.newLine();
+			writer.flush();
+			writer.close();
 
 			/*
 			 * Wait by here for all forked threads to die
@@ -161,6 +175,7 @@ public class BlockManager
 			System.out.println("Final value of stack top-1 = " + soStack.getAt(soStack.getITop() - 1) + ".");
 			System.out.println("Stack access count = " + soStack.getAccessCounter());
 
+			writer = new BufferedWriter(new FileWriter("output.txt",true));
 			writer.write("System terminates normally.");
 			writer.newLine();
 			writer.write("Final value of top = " + soStack.getITop() + ".");

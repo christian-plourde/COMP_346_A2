@@ -82,6 +82,15 @@ class BlockStack
 	public char pick()
 	{
 		accessCounter++; //the stack was accessed so we need to track that
+		try
+		{
+			acStack[this.iTop] = acStack[this.iTop];
+		}
+
+		catch (ArrayIndexOutOfBoundsException e)
+		{
+			return 'a';
+		}
 		return this.acStack[this.iTop];
 	}
 
@@ -125,6 +134,24 @@ class BlockStack
 			}
 
 			System.out.println("Value was successfully pushed onto the stack.");
+		}
+
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			try
+			{
+				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+				writer.write(e.getMessage());
+				writer.newLine();
+				writer.flush();
+				writer.close();
+				System.out.println(e.getMessage());
+			}
+
+			catch(IOException exp)
+			{
+
+			}
 		}
 
 		catch(StackException e)

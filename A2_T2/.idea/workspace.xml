@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff7a440f-db23-4989-942a-c75895c13b7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/BlockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$AcquireBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$CharStackProber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager$ReleaseBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/BlockManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/out/production/A2_T1/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T1/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T1/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlockManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlockStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T2/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T2/BlockManager$AcquireBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T2/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T2/BlockManager$CharStackProber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T2/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T2/BlockManager$ReleaseBlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T2/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T2/BlockManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2_T2/BlockStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2_T2/BlockStack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/BlockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/BlockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/BlockStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/BlockStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$AcquireBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$AcquireBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$CharStackProber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$CharStackProber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$ReleaseBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager$ReleaseBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/out/production/A2_T3/BlockStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2_T3/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../A2_T3/output.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +32,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-138">
+              <caret line="177" column="75" selection-start-line="177" selection-start-column="75" selection-end-line="177" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3128">
+              <caret line="136" column="29" lean-forward="true" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,11 +67,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/output.txt" />
-        <option value="$PROJECT_DIR$/BlockManager.java" />
         <option value="$PROJECT_DIR$/common/EmptyStackException.java" />
         <option value="$PROJECT_DIR$/common/StackException.java" />
         <option value="$PROJECT_DIR$/common/FullStackException.java" />
         <option value="$PROJECT_DIR$/BlockStack.java" />
+        <option value="$PROJECT_DIR$/BlockManager.java" />
       </list>
     </option>
   </component>
@@ -57,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -69,11 +100,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551120119407" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A2_T3" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,7 +145,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1659919" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16842106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -185,13 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="136" column="29" lean-forward="true" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/Semaphore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2438">
@@ -216,8 +240,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BlockManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="-138">
+          <caret line="177" column="75" selection-start-line="177" selection-start-column="75" selection-end-line="177" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="136" column="29" lean-forward="true" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
         </state>
       </provider>
     </entry>
