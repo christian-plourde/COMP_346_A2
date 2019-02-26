@@ -18,6 +18,9 @@ import java.io.IOException;
  */
 public class BlockManager
 {
+	//this is to make sure we don't print the all threads done phase 1 more than once
+	private static boolean phase1Finished = false;
+
 	/**
 	 * The stack itself
 	 */
@@ -52,7 +55,7 @@ public class BlockManager
 	 *
 	 * in the thread creation order
 	 */
-	//private static Semaphore s2 = new Semaphore(...);
+	private static Semaphore s2 = new Semaphore(1);
 
 
 	// The main()
@@ -166,6 +169,16 @@ public class BlockManager
 
 			for(int i = 0; i < NUM_PROBERS; i++)
 				aStackProbers[i].join();
+
+			//once we have reached this point we should print that all threads have completed the second phase
+
+			writer = new BufferedWriter(new FileWriter("output.txt",true));
+			writer.write("ALL THREADS HAVE COMPLETED PHASE II.");
+			writer.newLine();
+			writer.flush();
+			writer.close();
+			System.out.println("ALL THREADS HAVE COMPLETED PHASE II.");
+
 
 			// Some final stats after all the child threads terminated...
 			System.out.println("System terminates normally.");
@@ -293,11 +306,39 @@ public class BlockManager
 			}
 			mutex.Signal();
 
+			while(!turnTestAndSet());
+
+			s2.Wait();
 			s1.Wait();
+			//if we have made it here it means all threads have finished phase 1
+			if(!phase1Finished)
+			{
+				//if phase 1 was not yet finished then we write it
+				try
+				{
+					BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+					writer.write("ALL THREADS HAVE COMPLETED PHASE 1.");
+					writer.newLine();
+					writer.flush();
+					writer.close();
+					System.out.println("ALL THREADS HAVE COMPLETED PHASE 1.");
+					phase1Finished = true; //so that the next thread to come doesnt print this message again
+				}
+
+				catch(IOException e)
+				{
+					System.err.println("IOException has occurred.");
+				}
+			}
+
+
+
 			mutex.Wait();
 			phase2();
 			mutex.Signal();
+			s2.Signal();
 			s1.Signal();
+
 
 			try
 			{
@@ -401,11 +442,41 @@ public class BlockManager
 			mutex.Signal();
 
 			s1.Signal();
+
+			while(!turnTestAndSet());
+
+			s2.Wait();
 			s1.Wait();
+
+			//if we have made it here it means all threads have finished phase 1
+			if(!phase1Finished)
+			{
+				//if phase 1 was not yet finished then we write it
+				try
+				{
+					BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+					writer.write("ALL THREADS HAVE COMPLETED PHASE 1.");
+					writer.newLine();
+					writer.flush();
+					writer.close();
+					System.out.println("ALL THREADS HAVE COMPLETED PHASE 1.");
+					phase1Finished = true; //so that the next thread to come doesnt print this message again
+				}
+
+				catch(IOException e)
+				{
+					System.err.println("IOException has occurred.");
+				}
+			}
+
+
+
 			mutex.Wait();
 			phase2();
 			mutex.Signal();
+			s2.Signal();
 			s1.Signal();
+
 
 			try
 			{
@@ -480,11 +551,40 @@ public class BlockManager
 			mutex.Signal();
 
 			s1.Signal();
+
+			while(!turnTestAndSet());
+
+			s2.Wait();
 			s1.Wait();
+
+			//if we have made it here it means all threads have finished phase 1
+			if(!phase1Finished)
+			{
+				//if phase 1 was not yet finished then we write it
+				try
+				{
+					BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
+					writer.write("ALL THREADS HAVE COMPLETED PHASE 1.");
+					writer.newLine();
+					writer.flush();
+					writer.close();
+					System.out.println("ALL THREADS HAVE COMPLETED PHASE 1.");
+					phase1Finished = true; //so that the next thread to come doesnt print this message again
+				}
+
+				catch(IOException e)
+				{
+					System.err.println("IOException has occurred.");
+				}
+			}
+
 			mutex.Wait();
 			phase2();
 			mutex.Signal();
+			s2.Signal();
 			s1.Signal();
+
+
 
 		}
 	} // class CharStackProber
