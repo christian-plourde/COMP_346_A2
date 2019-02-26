@@ -45,10 +45,11 @@ public class BlockManager
 	/**
 	 * s1 is to make sure phase I for all is done before any phase II begins
 	 */
-	//private static Semaphore s1 = new Semaphore(...);
+	private static Semaphore s1 = new Semaphore(-6);
 
 	/**
 	 * s2 is for use in conjunction with Thread.turnTestAndSet() for phase II proceed
+	 *
 	 * in the thread creation order
 	 */
 	//private static Semaphore s2 = new Semaphore(...);
@@ -236,9 +237,11 @@ public class BlockManager
 				System.err.println("IOException occurred.");
 			}
 			System.out.println("AcquireBlock thread [TID=" + this.iTID + "] starts executing.");
+
 			mutex.Wait();
 			phase1();
 			mutex.Signal();
+
 			mutex.Wait();
 			try
 			{
@@ -289,9 +292,13 @@ public class BlockManager
 				System.exit(1);
 			}
 			mutex.Signal();
+
+			s1.Wait();
 			mutex.Wait();
 			phase2();
 			mutex.Signal();
+			s1.Signal();
+
 			try
 			{
 				BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt",true));
@@ -338,9 +345,11 @@ public class BlockManager
 			}
 			System.out.println("ReleaseBlock thread [TID=" + this.iTID + "] starts executing.");
 
+
 			mutex.Wait();
 			phase1();
 			mutex.Signal();
+
 			mutex.Wait();
 			try
 			{
@@ -390,10 +399,13 @@ public class BlockManager
 				System.exit(1);
 			}
 			mutex.Signal();
+
+			s1.Signal();
+			s1.Wait();
 			mutex.Wait();
 			phase2();
 			mutex.Signal();
-
+			s1.Signal();
 
 			try
 			{
@@ -419,9 +431,11 @@ public class BlockManager
 	{
 		public void run()
 		{
+
 			mutex.Wait();
 			phase1();
 			mutex.Signal();
+
 			mutex.Wait();
 			try
 			{
@@ -465,10 +479,12 @@ public class BlockManager
 			}
 			mutex.Signal();
 
+			s1.Signal();
+			s1.Wait();
 			mutex.Wait();
 			phase2();
 			mutex.Signal();
-
+			s1.Signal();
 
 		}
 	} // class CharStackProber
